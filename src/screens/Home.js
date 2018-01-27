@@ -5,7 +5,7 @@ import {
   Dimensions,
   View,
   StyleSheet,
-  TouchableHighlight,
+  TouchableOpacity,
 } from 'react-native';
 import {
   RkButton, RkStyleSheet,
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
           <Right />
         </Header>
         <Content>
-          <TouchableHighlight
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -45,8 +45,8 @@ export default class Home extends React.Component {
               <RkText>Notice</RkText>
               <FontAwesome style={{ marginLeft: 150 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -60,8 +60,8 @@ export default class Home extends React.Component {
               <RkText>Notifications</RkText>
               <FontAwesome style={{ marginLeft: 100 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -75,8 +75,8 @@ export default class Home extends React.Component {
               <RkText>Articles</RkText>
               <FontAwesome style={{ marginLeft: 140 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -90,8 +90,8 @@ export default class Home extends React.Component {
               <RkText>Placement Sessions</RkText>
               <FontAwesome style={{ marginLeft: 45 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -105,8 +105,8 @@ export default class Home extends React.Component {
               <RkText>Update Resume</RkText>
               <FontAwesome style={{ marginLeft: 80 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.item}
             onPress={() => Actions.notice()}
           >
@@ -120,7 +120,7 @@ export default class Home extends React.Component {
               <RkText>Send Documents</RkText>
               <FontAwesome style={{ marginLeft: 70 }} size={20} name="arrow-right" />
             </View>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </Content>
         <Footer>
           <FooterTab style={{ backgroundColor: '#fff' }}>

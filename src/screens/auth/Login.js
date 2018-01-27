@@ -33,12 +33,12 @@ const renderImage = () => {
   if (RkTheme.current.name === 'light') {
     image = (<Image
       style={[styles.image, { height, width }]}
-      source={require('../../assets/images/backgroundLoginV1.png')}
+      source={require('../../assets/images/e-tpo.png')}
     />);
   } else {
     image = (<Image
       style={[styles.image, { height, width }]}
-      source={require('../../assets/images/backgroundLoginV1DarkTheme.png')}
+      source={require('../../assets/images/e-tpo.png')}
     />);
   }
   return image;
