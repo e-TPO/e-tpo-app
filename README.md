@@ -4,7 +4,7 @@ Because Placements are awesome!
 ## e-TPO Mobile Application
 A cross platform app built with React Native, Redux, Redux Persist, Expo.
 # Checkout other repos (server)
-[https://github.com/e-TPO](e-TPO Organisation)
+[e-TPO Organisation](https://github.com/e-TPO)
 # Goal
 To solve the problem of various colleges and TPOs in order to make the placement sessions run hastle free and smoothly.
 # Features
