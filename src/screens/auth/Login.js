@@ -113,7 +113,7 @@ class Login extends React.Component {
           <View style={styles.textRow}>
             <RkButton
               rkType="clear"
-              onPress={() => Actions.home()}
+              onPress={() => Actions.home({ type: 'reset' })}
             >
               <RkText rkType="header6"> Continue as guest
               </RkText>

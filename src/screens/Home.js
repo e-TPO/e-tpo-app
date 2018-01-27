@@ -4,8 +4,6 @@ import {
   ScrollView,
   Dimensions,
   View,
-  Text,
-  Button,
   StyleSheet,
   TouchableHighlight,
 } from 'react-native';
@@ -13,36 +11,134 @@ import {
   RkButton, RkStyleSheet,
   RkText,
 } from 'react-native-ui-kitten';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {
+  Container, Header, Content, Footer, FooterTab, Button, Icon, Text,
+  Left, Right, Body, Title,
+} from 'native-base';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 const paddingValue = 8;
 
 export default class Home extends React.Component {
-  calculateItemSize() {
-    const { height, width } = Dimensions.get('window');
-    return (width - paddingValue * 6) / 2;
-  }
-
   render() {
-    const size = this.calculateItemSize();
     return (
-      <View>
-        <TouchableHighlight
-          style={styles.item}
-          activeOpacity={1}
-          onPress={() => Actions.notice()}
-        >
-          <View style={styles.container}>
-            <RkText
-              style={styles.icon}
-              rkType="primary moon xxlarge"
-            >
-              <Icon name="list-alt" size={30} />
-            </RkText>
-            <RkText>Notice</RkText>
-          </View>
-        </TouchableHighlight>
-      </View>
+      <Container>
+        <Header style={{ backgroundColor: '#8E44AD' }}>
+          <Left />
+          <Body>
+            <Title>E-TPO HOME</Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="list-alt" size={30} />
+              </RkText>
+              <RkText>Notice</RkText>
+              <FontAwesome style={{ marginLeft: 150 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="bell" size={30} />
+              </RkText>
+              <RkText>Notifications</RkText>
+              <FontAwesome style={{ marginLeft: 100 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="th-list" size={30} />
+              </RkText>
+              <RkText>Articles</RkText>
+              <FontAwesome style={{ marginLeft: 140 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="ticket" size={30} />
+              </RkText>
+              <RkText>Placement Sessions</RkText>
+              <FontAwesome style={{ marginLeft: 45 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="user" size={30} />
+              </RkText>
+              <RkText>Update Resume</RkText>
+              <FontAwesome style={{ marginLeft: 80 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.item}
+            onPress={() => Actions.notice()}
+          >
+            <View style={styles.container}>
+              <RkText
+                style={styles.icon}
+                rkType="primary moon xxlarge"
+              >
+                <FontAwesome name="folder-open" size={30} />
+              </RkText>
+              <RkText>Send Documents</RkText>
+              <FontAwesome style={{ marginLeft: 70 }} size={20} name="arrow-right" />
+            </View>
+          </TouchableHighlight>
+        </Content>
+        <Footer>
+          <FooterTab style={{ backgroundColor: '#fff' }}>
+            <Button vertical>
+              <Icon name="home" style={{ color: 'red' }} />
+            </Button>
+            <Button vertical>
+              <Icon name="ios-notifications" style={{ color: 'red' }} />
+            </Button>
+            <Button vertical onPress={() => Actions.search()}>
+              <Icon active name="search" style={{ color: 'red' }} />
+            </Button>
+            <Button vertical onPress={() => Actions.settings()}>
+              <Icon name="cog" style={{ color: 'red' }} />
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
@@ -51,12 +147,13 @@ const styles = RkStyleSheet.create(theme => ({
   item: {
     height: 80,
     justifyContent: 'center',
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
     borderColor: theme.colors.border.base,
     paddingHorizontal: 16,
+    backgroundColor: '#ffffff',
   },
   list: {
-    backgroundColor: theme.colors.screen.base,
+    backgroundColor: '#ffffff',
   },
   container: {
     flexDirection: 'row',
