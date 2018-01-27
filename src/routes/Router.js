@@ -4,6 +4,7 @@ import LoadingScreen from '../screens/Loading';
 import HomeScreen from '../screens/Home';
 import NoticeScreen from '../screens/Notice';
 import NotificationScreen from '../screens/Notification';
+import ArticleScreen from '../screens/Article';
 import SearchScreen from '../screens/Search';
 import SettingsScreen from '../screens/Settings';
 import Login from '../screens/auth/Login';
@@ -16,6 +17,7 @@ const RouterComponent = () => (
       <Scene key="loading" component={LoadingScreen} hideNavBar />
       <Scene key="home" component={HomeScreen} hideNavBar />
       <Scene key="notifications" component={NotificationScreen} title="Notifications" />
+      <Scene key="articles" component={ArticleScreen} title="Articles" />
       <Scene key="search" component={SearchScreen} title="e-TPO search" />
       <Scene key="settings" component={SettingsScreen} title="Settings" />
       <Scene key="login" component={Login} hideNavBar />

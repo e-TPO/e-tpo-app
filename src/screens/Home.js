@@ -63,7 +63,7 @@ export default class Home extends React.Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.item}
-            onPress={() => Actions.notice()}
+            onPress={() => Actions.articles()}
           >
             <View style={styles.container}>
               <RkText
