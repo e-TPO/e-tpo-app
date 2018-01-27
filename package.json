@@ -46,6 +46,7 @@
     "react-native-router-flux": "^4.0.0-beta.28",
     "react-native-switch-pro": "^0.4.7",
     "react-native-ui-kitten": "^3.0.0",
+    "react-native-vector-icons": "^4.5.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-persist": "^5.5.0",

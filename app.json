@@ -3,6 +3,9 @@
     "sdkVersion": "25.0.0",
     "android": {
       "package": "me.feat7.etpo"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#C2185B"
     }
   }
 }
