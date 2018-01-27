@@ -1,0 +1,16 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb"
+    ],
+    "plugins": [
+        "react",
+        "jsx-a11y"
+    ],
+    "rules": {
+        "react/prefer-stateless-function": "off",
+        "react/jsx-filename-extension": "off",
+        "no-use-before-define": "off",
+        "global-require": "off"
+    }
+}

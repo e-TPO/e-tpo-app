@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "babel-preset-expo",
+    "react-native",
+    "flow",
+    "react-native-dotenv"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  },
+  "retainLines": true
+}
